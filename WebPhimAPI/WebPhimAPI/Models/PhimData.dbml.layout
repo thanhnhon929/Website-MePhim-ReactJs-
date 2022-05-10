@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 17.5" name="PhimData">
+  <DataContextMoniker Name="/PhimDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="34d727f9-3f46-491c-ae25-9d22da70a116" absoluteBounds="0.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/PhimDataDataContext/ADMIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10b16f2c-5054-43c5-8eaf-585843f1a5ef" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0247344b-bf9a-478c-b738-532927b13d71" absoluteBounds="3.5, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/PhimDataDataContext/CHIEURAP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c672113-bca1-400d-a401-ae8b4032929f" absoluteBounds="3.515, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd76b3d0-1348-475f-b600-39ac56bf0a0e" absoluteBounds="3.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/PhimDataDataContext/NGUOIXEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f89d968c-5604-4472-b5a9-f9139f8bc8a3" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c5eab30-5121-4d08-a734-489b3430f9c2" absoluteBounds="0.75, 7.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PhimDataDataContext/NHASANXUAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1cb627c7-74a8-4504-ac23-9d3dfe470667" absoluteBounds="0.765, 8.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df182051-34bb-4f29-9f2b-cc65664e5bca" absoluteBounds="6.25, 7.5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/PhimDataDataContext/PHIM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c220b383-5a10-4bb7-9e90-2a0c28f94dae" absoluteBounds="6.265, 7.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9802d986-50ab-4150-abd0-6910c84ac306" absoluteBounds="9, 7.75, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/PhimDataDataContext/PHIMBO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3f3c6c3-ed2b-43ca-96ab-3bcedb7534ec" absoluteBounds="9.015, 8.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a126371c-e30f-4910-adab-39d9d19ce99c" absoluteBounds="9, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/PhimDataDataContext/PHIMHAY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa2d7d22-0e33-4f5c-9512-2e71670e9d82" absoluteBounds="9.015, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d703276-f548-4ebd-8521-ad6681356171" absoluteBounds="9, 10.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/PhimDataDataContext/PHIMLE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df4034f6-830e-4e4b-9879-837f269662be" absoluteBounds="9.015, 11.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24d39130-7d01-48ed-a782-a3c09e2fc1d9" absoluteBounds="3.5, 7.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/PhimDataDataContext/THELOAI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f91fe9b7-bca5-459d-a047-06cf33b914e3" absoluteBounds="3.515, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02b4ff42-755b-4adc-9a03-4be22223115b" absoluteBounds="9, 15.25, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/PhimDataDataContext/VIDEO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87ce7610-b580-4da2-b55a-eb37e29b8c07" absoluteBounds="9.015, 15.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 7.875); (1.75 : 5.63544840494792); (3.5 : 5.63544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/NHASANXUAT/NHASANXUAT_CHIEURAP" />
+      <nodes>
+        <classShapeMoniker Id="1c5eab30-5121-4d08-a734-489b3430f9c2" />
+        <classShapeMoniker Id="0247344b-bf9a-478c-b738-532927b13d71" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 7.5); (7.25 : 5.63544840494792); (5.5 : 5.63544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/PHIM/PHIM_CHIEURAP" />
+      <nodes>
+        <classShapeMoniker Id="df182051-34bb-4f29-9f2b-cc65664e5bca" />
+        <classShapeMoniker Id="0247344b-bf9a-478c-b738-532927b13d71" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.38869466145833); (6.25 : 9.38869466145833)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/NHASANXUAT/NHASANXUAT_PHIM" />
+      <nodes>
+        <classShapeMoniker Id="1c5eab30-5121-4d08-a734-489b3430f9c2" />
+        <classShapeMoniker Id="df182051-34bb-4f29-9f2b-cc65664e5bca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.60059533072917); (3.25 : 8.60059533072917); (3.25 : 7.25); (10 : 7.25); (10 : 7.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/NHASANXUAT/NHASANXUAT_PHIMBO" />
+      <nodes>
+        <classShapeMoniker Id="1c5eab30-5121-4d08-a734-489b3430f9c2" />
+        <classShapeMoniker Id="9802d986-50ab-4150-abd0-6910c84ac306" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.63544840494792); (9 : 8.63544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/PHIM/PHIM_PHIMBO" />
+      <nodes>
+        <classShapeMoniker Id="df182051-34bb-4f29-9f2b-cc65664e5bca" />
+        <classShapeMoniker Id="9802d986-50ab-4150-abd0-6910c84ac306" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.87621330413662); (3.125 : 7.50121330413662); (3.125 : 6.89589680989583); (7.69791916666667 : 6.89589680989583 : JumpStart); (7.86458583333333 : 6.89589680989583 : JumpEnd); (8.625 : 6.89589680989583); (9 : 6.52089680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/NHASANXUAT/NHASANXUAT_PHIMHAY" />
+      <nodes>
+        <classShapeMoniker Id="1c5eab30-5121-4d08-a734-489b3430f9c2" />
+        <classShapeMoniker Id="a126371c-e30f-4910-adab-39d9d19ce99c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.7812525 : 7.5); (7.7812525 : 5.19272420247396); (9 : 5.19272420247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/PHIM/PHIM_PHIMHAY" />
+      <nodes>
+        <classShapeMoniker Id="df182051-34bb-4f29-9f2b-cc65664e5bca" />
+        <classShapeMoniker Id="a126371c-e30f-4910-adab-39d9d19ce99c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 9.45359537760417); (1.75 : 11.6354484049479); (9 : 11.6354484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/NHASANXUAT/NHASANXUAT_PHIMLE" />
+      <nodes>
+        <classShapeMoniker Id="1c5eab30-5121-4d08-a734-489b3430f9c2" />
+        <classShapeMoniker Id="6d703276-f548-4ebd-8521-ad6681356171" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 9.84780110677083); (7.25 : 11.161471702474); (7.69791916666667 : 11.161471702474 : JumpStart); (7.86458583333333 : 11.161471702474 : JumpEnd); (9 : 11.161471702474)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/PHIM/PHIM_PHIMLE" />
+      <nodes>
+        <classShapeMoniker Id="df182051-34bb-4f29-9f2b-cc65664e5bca" />
+        <classShapeMoniker Id="6d703276-f548-4ebd-8521-ad6681356171" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.56814697265625); (6.25 : 8.56814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/THELOAI/THELOAI_PHIM" />
+      <nodes>
+        <classShapeMoniker Id="24d39130-7d01-48ed-a782-a3c09e2fc1d9" />
+        <classShapeMoniker Id="df182051-34bb-4f29-9f2b-cc65664e5bca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.20715681743289); (3.16666666666667 : 8.20715681743289 : JumpStart); (3.33333333333333 : 8.20715681743289 : JumpEnd); (3.5 : 8.20715681743289)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/NHASANXUAT/NHASANXUAT_THELOAI" />
+      <nodes>
+        <classShapeMoniker Id="1c5eab30-5121-4d08-a734-489b3430f9c2" />
+        <classShapeMoniker Id="24d39130-7d01-48ed-a782-a3c09e2fc1d9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.7812525 : 9.84780110677083); (7.7812525 : 16.2315991210938); (9 : 16.2315991210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PhimDataDataContext/PHIM/PHIM_VIDEO" />
+      <nodes>
+        <classShapeMoniker Id="df182051-34bb-4f29-9f2b-cc65664e5bca" />
+        <classShapeMoniker Id="02b4ff42-755b-4adc-9a03-4be22223115b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

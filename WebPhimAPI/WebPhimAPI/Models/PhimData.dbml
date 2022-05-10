@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MEPHIM" Class="PhimDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-7M1CAOH\SQLEXPRESS;Initial Catalog=MEPHIM;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MEPHIMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ADMIN" Member="ADMINs">
+    <Type Name="ADMIN">
+      <Column Name="MaAdmin" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenAdmin" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TenDN" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHIEURAP" Member="CHIEURAPs">
+    <Type Name="CHIEURAP">
+      <Column Name="MaChieuRap" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenChieuRap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaNSX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaPhim" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="NHASANXUAT_CHIEURAP" Member="NHASANXUAT" ThisKey="MaNSX" OtherKey="MaNSX" Type="NHASANXUAT" IsForeignKey="true" />
+      <Association Name="PHIM_CHIEURAP" Member="PHIM" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGUOIXEM" Member="NGUOIXEMs">
+    <Type Name="NGUOIXEM">
+      <Column Name="MaNX" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TaiKhoan" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHASANXUAT" Member="NHASANXUATs">
+    <Type Name="NHASANXUAT">
+      <Column Name="MaNSX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenNSX" Type="System.String" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DienThoai" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="NHASANXUAT_CHIEURAP" Member="CHIEURAPs" ThisKey="MaNSX" OtherKey="MaNSX" Type="CHIEURAP" />
+      <Association Name="NHASANXUAT_PHIM" Member="PHIMs" ThisKey="MaNSX" OtherKey="MaNSX" Type="PHIM" />
+      <Association Name="NHASANXUAT_PHIMBO" Member="PHIMBOs" ThisKey="MaNSX" OtherKey="MaNSX" Type="PHIMBO" />
+      <Association Name="NHASANXUAT_PHIMHAY" Member="PHIMHAYs" ThisKey="MaNSX" OtherKey="MaNSX" Type="PHIMHAY" />
+      <Association Name="NHASANXUAT_PHIMLE" Member="PHIMLEs" ThisKey="MaNSX" OtherKey="MaNSX" Type="PHIMLE" />
+      <Association Name="NHASANXUAT_THELOAI" Member="THELOAIs" ThisKey="MaNSX" OtherKey="MaNSX" Type="THELOAI" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHIM" Member="PHIMs">
+    <Type Name="PHIM">
+      <Column Name="MaPhim" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenPhim" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MoTa" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="MaTheLoai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaNSX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LuotXem" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="PHIM_CHIEURAP" Member="CHIEURAPs" ThisKey="MaPhim" OtherKey="MaPhim" Type="CHIEURAP" />
+      <Association Name="PHIM_PHIMBO" Member="PHIMBOs" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIMBO" />
+      <Association Name="PHIM_PHIMHAY" Member="PHIMHAYs" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIMHAY" />
+      <Association Name="PHIM_PHIMLE" Member="PHIMLEs" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIMLE" />
+      <Association Name="PHIM_VIDEO" Member="VIDEOs" ThisKey="MaPhim" OtherKey="MaPhim" Type="VIDEO" />
+      <Association Name="NHASANXUAT_PHIM" Member="NHASANXUAT" ThisKey="MaNSX" OtherKey="MaNSX" Type="NHASANXUAT" IsForeignKey="true" />
+      <Association Name="THELOAI_PHIM" Member="THELOAI" ThisKey="MaTheLoai" OtherKey="MaTheLoai" Type="THELOAI" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHIMBO" Member="PHIMBOs">
+    <Type Name="PHIMBO">
+      <Column Name="MaPhimBo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenPhimBo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaNSX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaPhim" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="NHASANXUAT_PHIMBO" Member="NHASANXUAT" ThisKey="MaNSX" OtherKey="MaNSX" Type="NHASANXUAT" IsForeignKey="true" />
+      <Association Name="PHIM_PHIMBO" Member="PHIM" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHIMHAY" Member="PHIMHAYs">
+    <Type Name="PHIMHAY">
+      <Column Name="MaPhimHay" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenPhimHay" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaNSX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaPhim" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="NHASANXUAT_PHIMHAY" Member="NHASANXUAT" ThisKey="MaNSX" OtherKey="MaNSX" Type="NHASANXUAT" IsForeignKey="true" />
+      <Association Name="PHIM_PHIMHAY" Member="PHIM" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHIMLE" Member="PHIMLEs">
+    <Type Name="PHIMLE">
+      <Column Name="MaPhimLe" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenPhimLe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaNSX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaPhim" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="NHASANXUAT_PHIMLE" Member="NHASANXUAT" ThisKey="MaNSX" OtherKey="MaNSX" Type="NHASANXUAT" IsForeignKey="true" />
+      <Association Name="PHIM_PHIMLE" Member="PHIM" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THELOAI" Member="THELOAIs">
+    <Type Name="THELOAI">
+      <Column Name="MaTheLoai" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTheLoai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaNSX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="THELOAI_PHIM" Member="PHIMs" ThisKey="MaTheLoai" OtherKey="MaTheLoai" Type="PHIM" />
+      <Association Name="NHASANXUAT_THELOAI" Member="NHASANXUAT" ThisKey="MaNSX" OtherKey="MaNSX" Type="NHASANXUAT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VIDEO" Member="VIDEOs">
+    <Type Name="VIDEO">
+      <Column Name="MaPhim" Type="System.Int32" DbType="Int" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="Video" Member="Video1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TenPhim" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MoTa" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="AnhBia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NgayCapNhat" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Association Name="PHIM_VIDEO" Member="PHIM" ThisKey="MaPhim" OtherKey="MaPhim" Type="PHIM" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
